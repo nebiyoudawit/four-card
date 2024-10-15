@@ -1,0 +1,67 @@
+body{
+    background-color:hsl(227, 21%, 92%);
+    font-family: Poppins;
+    color: hsl(234, 12%, 34%);
+    padding: 40px 20px;
+    font-size: clamp(1rem,0.5 +1vw,1.5rem);
+    font-weight: 200;
+}
+h2{
+    font-weight: 200;
+    text-align: center;
+    margin: 5px;
+}
+h2 span{
+    font-weight: 600;
+    color: black;
+}
+p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-radius: 7px;  
+}
+main span{
+    font-weight: 600;
+    display: block;
+    font-size: clamp(1.2rem,2vw,2rem);
+}
+main p{
+    font-size: clamp(0.8rem, 1vw,2rem);
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+main svg{
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 0px;
+    padding-right: 10px;
+}
+.sup{
+    border-top-color: hsl(180, 62%, 55%);
+}
+.tea{
+border-top-color: hsl(0, 78%, 62%);
+}
+.kar{
+    border-top-color: hsl(34, 97%, 64%);
+}
+.calc{
+    border-top-color: hsl(212, 86%, 64%);
+}
