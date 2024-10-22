@@ -10,6 +10,7 @@ h2{
     font-weight: 200;
     text-align: center;
     margin: 5px;
+    font-size: clamp(1.5rem, 2vw, 4rem);
 }
 h2 span{
     font-weight: 600;
@@ -18,23 +19,32 @@ h2 span{
 p{
     text-align: center;
     margin-bottom: 50px;
+    font-size: clamp(1rem, 1vw, 2rem);
+    padding: clamp(0,1vw,1000px);
+    max-width: 1000px;
+    justify-self: center;
 }
 main{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     flex: 1;
     margin: 10px;
 }
+
 main div{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: hsl(0, 0%, 98%);
     margin: 20px;
     padding: 25px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
     border-top-style: solid;
-    border-top-width: 5px;
+    border-top-width: clamp(5px,1vw,10px);
     border-radius: 7px;  
+    max-width: 500px;
 }
 main span{
     font-weight: 600;
@@ -42,16 +52,22 @@ main span{
     font-size: clamp(1.2rem,2vw,2rem);
 }
 main p{
-    font-size: clamp(0.8rem, 1vw,2rem);
+    font-size: clamp(0.8rem, 1vw,1.6rem);
     text-align: left;
     margin-bottom: 30px;
     margin-top: 5px;
 }
-main svg{
-    justify-content: flex-end;
+.icon{
+    border: none;
+    box-shadow: none;
+    margin: 0;
     margin-left: auto;
-    margin-top: 0px;
-    padding-right: 10px;
+    padding: 0;
+    margin-bottom: clamp(10px,1vw,50px);
+    max-width: 600px;
+}
+img{
+    max-width: 300px;
 }
 .sup{
     border-top-color: hsl(180, 62%, 55%);
@@ -65,3 +81,15 @@ border-top-color: hsl(0, 78%, 62%);
 .calc{
     border-top-color: hsl(212, 86%, 64%);
 }
+@media (min-width: 48em) {
+    main {
+    flex-direction: row;
+    }
+    .sup,.calc{
+        transform: translateY(50%);
+    }
+    .kar{
+        position: absolute;
+        margin-top: 400px;
+    }
+  }
